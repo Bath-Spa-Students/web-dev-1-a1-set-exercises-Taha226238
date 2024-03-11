@@ -1,0 +1,116 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  /* General Styles */
+  body {
+    background-color: #514848;
+    color: #ffffff;
+    font-family: 'Garamond', sans-serif;
+  }
+
+  header {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #8c1a1a;
+  }
+
+  header h1 {
+    margin: 0;
+    color: #feffff;
+    font-size: 2em;
+    font-family: 'georgia', sans-serif; /* New font for main heading */
+    font-size: 900%;
+    font-style: oblique;
+  }
+
+  header p {
+    font-size: 1.2em;
+    margin-top: 10px;
+    font-family: 'Garamond', serif; /* New font for subheading */
+    font-style: oblique;
+    color: #feffff;
+  }
+
+  section {
+    padding: 30px;
+  }
+
+  article {
+    margin-bottom: 40px;
+  }
+
+  pre {
+    background-color: #54544c;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    color: #66c2ff;
+  }
+
+  .output {
+    background-color: #1a1a1a;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  ul, ol {
+    margin-bottom: 15px;
+  }
+
+  output img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  a {
+    color: #66c2ff;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+  }
+
+  .tag-example {
+    background-color: #333;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+
+  .tag-example code {
+    color: #66c2ff;
+    font-size: 1.2em;
+  }
+
+  /* Additional Styles Section */
+  .additional-styles {
+    margin-top: 50px;
+    padding: 30px;
+    background-color: #9f2626;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+
+  /* Additional CSS Properties Boxes */
+  .box {
+    background-color: #862c39;
+    padding: 30px;
+    border-radius: 15px;
+    margin-top: 20px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+  }
+
+  .box code {
+    color: #66c2ff;
+    font-size: 1.2em;
+  }
