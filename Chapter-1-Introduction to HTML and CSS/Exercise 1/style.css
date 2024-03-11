@@ -1,0 +1,72 @@
+body {
+    background-image: url('Ba.jpg');
+    backdrop-filter: (5px);
+    background-size: cover;
+    font-family: 'Georgia', serif;
+    color: #ffffff;
+    padding: 20px;
+    margin: 10px;
+}
+
+h1 {
+    font-family: 'Georgia', serif;
+    font-style: oblique;
+    font-size: 150px;
+    margin-bottom: 100px;
+    text-align: center;
+    color: #e8c8c8; /* Brown color */
+    font-weight: bold; /* Added for boldness */
+}
+
+h2 {
+    font-family: 'Georgia', serif;
+    font-size: 50px;
+    margin-bottom: 100px;
+    background-color: #381010;
+    display: inline-block;
+    padding: 15px 100px;
+    text-align: center;
+    color: #8B4513; /* Brown color */
+    font-weight: bold; /* Added for boldness */
+}
+
+.box {
+    border: 2px solid #6a3737;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.ingredient-box {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.method-box {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+ul, ol {
+    list-style-position: inside;
+    margin: 0;
+}
+
+strong, p, li {
+    margin-bottom: 20px;
+}
+
+/* Social Media Icons */
+.social-icons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-icons a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-icons a:hover {
+    color: #000000;
+}
