@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Glazed Donuts Recipe</title>
+    <!-- Font Awesome link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .top-right-buttons {
+            position: fixed;
+            top: 10px;
+            right: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+
+        .navigation-button {
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons top-right-buttons">
+        <button onclick="scrollToSection('ingredients')" class="navigation-button">
+            <i class="fas fa-list-ul"></i> Ingredients
+        </button>
+        <button onclick="scrollToSection('method')" class="navigation-button">
+            <i class="fas fa-book-open"></i> Method
+        </button>
+    </div>
+
+    <!-- Recipe Name -->
+    <h1>  Glazed Donuts</h1>
+
+    <!-- Recipe Description -->
+    <p>This easy homemade glazed donuts recipe will satisfy your sweet cravings. Enjoy these delicious donuts with a cup of coffee or tea!</p>
+
+    <!-- Ingredients Box -->
+    <div id="ingredients" class="box ingredient-box">
+        <h2>Ingredients:</h2>
+        <ul>
+            <li>2 cups all-purpose flour</li>
+            <li>1/2 cup granulated sugar</li>
+            <li>2 tsp baking powder</li>
+            <li>1/2 tsp salt</li>
+            <li>3/4 cup milk</li>
+            <li>2 large eggs</li>
+            <li>2 tbsp unsalted butter, melted</li>
+            <li>1 tsp vanilla extract</li>
+            <li>Oil for frying</li>
+            <li>1 cup powdered sugar (for glaze)</li>
+            <li>2 tbsp milk (for glaze)</li>
+            <li>1/2 tsp vanilla extract (for glaze)</li>
+        </ul>
+    </div>
+
+    <!-- Method Box -->
+    <div id="method" class="box method-box">
+        <h2>Method:</h2>
+        <ol>
+            <li>In a large bowl, whisk together flour, sugar, baking powder, and salt.</li>
+            <li>In another bowl, mix milk, eggs, melted butter, and vanilla extract.</li>
+            <li>Add the wet ingredients to the dry ingredients, stirring until just combined.</li>
+            <li>Heat oil in a deep fryer or large pot to 375°F (190°C).</li>
+            <li>Drop spoonfuls of batter into the hot oil and fry until golden brown.</li>
+            <li>Remove donuts and drain on paper towels.</li>
+            <li>In a separate bowl, whisk together powdered sugar, milk, and vanilla extract to make the glaze.</li>
+            <li>Dip each donut into the glaze, ensuring it is fully coated.</li>
+            <li>Allow the glaze to set before serving.</li>
+            <li>Enjoy your homemade glazed donuts!</li>
+        </ol>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="social-icons">
+        <a href="#" class="fab fa-facebook"></a>
+        <a href="#" class="fab fa-twitter"></a>
+        <a href="#" class="fab fa-instagram"></a>
+        <!-- Add more social media icons as needed -->
+    </div>
+
+    <!-- JavaScript to handle scrolling to sections -->
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
