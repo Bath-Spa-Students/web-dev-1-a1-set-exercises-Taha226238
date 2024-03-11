@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML & CSS Quick Reference</title>
+  <style>
+    </style>
+</head>
+<link rel="stylesheet" href="./style.css">
+<body>
+
+  <!-- Header Section -->
+  <header>
+    <h1>HTML & CSS Quick Reference</h1>
+    <p>Your go-to guide for essential tags and styles</p>
+  </header>
+
+  <!-- Main Content Section -->
+  <section>
+
+    <!-- Article 1: Basic HTML Tags -->
+    <article>
+      <h2>1. Basic HTML Tags</h2>
+      <p>Here are some essential HTML tags:</p>
+      <pre>
+        <code>&lt;h1&gt;&lt;/h1&gt;</code>
+        <code>&lt;p&gt;&lt;/p&gt;</code>
+        <code>&lt;a href="#"&gt;&lt;/a&gt;</code>
+        <code>&lt;img src="image.jpg" alt="Description"&gt;</code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <h1>This is an H1 heading</h1>
+        <p>This is a paragraph of text.</p>
+        <img src="OIP.jpg" alt="An example image">
+      </div>
+    </article>
+
+    <!-- Article 2: Lists and Formatting -->
+    <article>
+      <h2>2. Lists and Formatting</h2>
+      <p>Useful for organizing content:</p>
+      <pre>
+        <code>&lt;ul&gt;&lt;li&gt;&lt;/li&gt;&lt;/ul&gt;</code>
+        <code>&lt;ol&gt;&lt;li&gt;&lt;/li&gt;&lt;/ol&gt;</code>
+        <code>&lt;strong&gt;&lt;/strong&gt;</code>
+        <code>&lt;em&gt;&lt;/em&gt;</code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <ul>
+          <li>Unordered List Item 1</li>
+          <li>Unordered List Item 2</li>
+        </ul>
+        <ol>
+          <li>Ordered List Item 1</li>
+          <li>Ordered List Item 2</li>
+        </ol>
+        <p><strong>This text is bold.</strong> <em>This text is italicized.</em></p>
+      </div>
+    </article>
+
+    <!-- Article 3: Example: <div> Tag -->
+    <article>
+      <h2>3. Example: &lt;div&gt; Tag</h2>
+      <p>The <code>&lt;div&gt;</code> tag is a container for other HTML elements. It's often used for grouping and styling purposes.</p>
+      <pre>
+        <code>&lt;div class="example"&gt;Content goes here&lt;/div&gt;</code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <div class="tag-example">
+          <p>Content goes here</p>
+        </div>
+      </div>
+    </article>
+
+    <!-- Article 4: <span> Tag -->
+    <article>
+      <h2>4. <code>&lt;span&gt;</code> Tag</h2>
+      <p>The <code>&lt;span&gt;</code> tag is an inline container used to apply styles or scripting to a specific portion of text.</p>
+      <pre>
+        <code>&lt;p&gt;This is a &lt;span class="highlight"&gt;highlighted&lt;/span&gt; word.&lt;/p&gt;</code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <p>This is a <span class="highlight">highlighted</span> word.</p>
+      </div>
+    </article>
+
+    <!-- Article 5: <input> Tag -->
+    <article>
+      <h2>5. <code>&lt;input&gt;</code> Tag</h2>
+      <p>The <code>&lt;input&gt;</code> tag is used to create interactive form controls.</p>
+      <pre>
+        <code>&lt;input type="text" placeholder="Enter your name"&gt;</code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <input type="text" placeholder="Enter your name">
+      </div>
+    </article>
+
+    <!-- Article 6: <button> Tag -->
+    <article>
+      <h2>6. <code>&lt;button&gt;</code> Tag</h2>
+      <p>The <code>&lt;button&gt;</code> tag defines a clickable button, which can be used in forms or to trigger JavaScript functions.</p>
+      <pre>
+        <code>&lt;button onclick="alert('Hello!')"&gt;Click me&lt;/button&gt;</code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <button onclick="alert('Hello!')">Click me</button>
+      </div>
+    </article>
+
+    <!-- Article 7: <hr> Tag -->
+    <article>
+      <h2>7. <code>&lt;hr&gt;</code> Tag</h2>
+      <p>The <code>&lt;hr&gt;</code> tag represents a horizontal rule, used to separate content.</p>
+      <pre>
+        <code>&lt;p&gt;Some text above the line.&lt;/p&gt;&lt;hr&gt;&lt;p&gt;Some text below the line.&lt;/p&gt;</code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <p>Some text above the line.</p>
+        <hr>
+        <p>Some text below the line.</p>
+      </div>
+    </article>
+
+    <!-- Article 8: <br> Tag -->
+    <article>
+      <h2>8. <code>&lt;br&gt;</code> Tag</h2>
+      <p>The <code>&lt;br&gt;</code> tag inserts a line break within text.</p>
+      <pre>
+        <code>&lt;p&gt;This is the first line.&lt;br&gt;This is the second line.&lt;/p&gt;</code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <p>This is the first line.<br>This is the second line.</p>
+      </div>
+    </article>
+
+    <!-- Article 9: <iframe> Tag -->
+    <article>
+      <h2>9. <code>&lt;iframe&gt;</code> Tag</h2>
+      <p>The <code>&lt;iframe&gt;</code> tag is used to embed external content, such as a web page or video.</p>
+      <pre>
+        <code>&lt;iframe src="https://www.example.com" width="400" height="300"&gt;&lt;/iframe&gt;</code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <iframe src="https://www.example.com" width="400" height="300"></iframe>
+      </div>
+    </article>
+
+    <!-- Article 10: <select> Tag -->
+    <article>
+      <h2>10. <code>&lt;select&gt;</code> Tag</h2>
+      <p>The <code>&lt;select&gt;</code> tag creates a drop-down list, often used in forms.</p>
+      <pre>
+        <code>
+          &lt;select&gt;
+            &lt;option value="option1"&gt;Option 1&lt;/option&gt;
+            &lt;option value="option2"&gt;Option 2&lt;/option&gt;
+            &lt;option value="option3"&gt;Option 3&lt;/option&gt;
+          &lt;/select&gt;
+        </code>
+      </pre>
+      <p>Output:</p>
+      <div class="output">
+        <select>
+          <option value="option1">Option 1</option>
+          <option value="option2">Option 2</option>
+          <option value="option3">Option 3</option>
+        </select>
+      </div>
+    </article>
+
+    <!-- Additional Styles Section -->
+    <div class="additional-styles">
+      <h2>Additional Styles</h2>
+      <p>This section demonstrates additional CSS properties:</p>
+
+      <!-- Box 1: box-shadow -->
+      <div class="box">
+        <h3><code>box-shadow:</code></h3>
+        <p>Adds a shadow effect to an element.</p>
+        <code>box-shadow: 0 0 15px rgba(255, 255, 255, 0.3);</code>
+      </div>
+
+      <!-- Box 2: font-size -->
+      <div class="box">
+        <h3><code>font-size:</code></h3>
+        <p>Sets the font size of an element's text.</p>
+        <code>font-size: 1.2em;</code>
+      </div>
+
+      <!-- Box 3: margin-top -->
+      <div class="box">
+        <h3><code>margin-top:</code></h3>
+        <p>Specifies the margin on the top of an element.</p>
+        <code>margin-top: 20px;</code>
+      </div>
+
+      <!-- Box 4: padding -->
+      <div class="box">
+        <h3><code>padding:</code></h3>
+        <p>Defines the padding inside an element.</p>
+        <code>padding: 30px;</code>
+      </div>
+
+      <!-- Box 5: background-color -->
+      <div class="box">
+        <h3><code>background-color:</code></h3>
+        <p>Sets the background color of an element.</p>
+        <code>background-color: #555;</code>
+      </div>
+
+      <!-- Box 6: border-radius -->
+      <div class="box">
+        <h3><code>border-radius:</code></h3>
+        <p>Creates rounded corners for an element.</p>
+        <code>border-radius: 15px;</code>
+      </div>
+
+      <!-- Box 7: line-height -->
+      <div class="box">
+        <h3><code>line-height:</code></h3>
+        <p>Sets the height of a line of text.</p>
+        <code>line-height: 1.5;</code>
+      </div>
+
+      <!-- Box 8: text-decoration -->
+      <div class="box">
+        <h3><code>text-decoration:</code></h3>
+        <p>Controls the decoration of text (underline in this case).</p>
+        <code>text-decoration: underline;</code>
+      </div>
+    </div>
+
+  </section>
+
+</body>
+</html>
