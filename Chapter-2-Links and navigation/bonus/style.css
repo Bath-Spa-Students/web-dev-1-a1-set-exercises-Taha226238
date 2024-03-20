@@ -1,0 +1,110 @@
+body {
+    font-family: Garamond, serif; /* Default font family */
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    background-image: url('https://www.minecraft.net/content/dam/minecraft/backgrounds/nap_background-new.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: #fff;
+}
+
+@font-face {
+    font-family: 'Minecraft';
+    src: url('https://fonts.googleapis.com/css2?family=Minecraft&display=swap');
+}
+
+.navbar {
+    background-color: rgba(60, 122, 39, 0.5);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 20px;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+.navbar a:hover {
+    background-color: rgba(165, 13, 13, 0.2);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: rgba(118, 70, 70, 0.5);
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(116, 20, 20, 0.5);
+    transition: box-shadow 0.3s ease;
+}
+
+.container:hover {
+    box-shadow: 0 0 40px rgba(255, 255, 255, 0.7);
+}
+
+.section {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px rgba(208, 208, 208, 0.7);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #579332;
+    margin-top: 20px;
+    font-size: 200px;
+    text-shadow: 2px 2px 4px rgba(141, 64, 64, 0.5);
+}
+
+h2 {
+    color: #712e2e;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 75px;
+}
+
+p {
+    color: #ddd;
+    line-height: 1.6;
+    font-size: 25px;
+    text-align: center;
+}
+
+.button {
+    background-color: #000100;
+    background-image: linear-gradient(to bottom, #000000, #000000);
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.button:hover {
+    background-color: #000000;
+}
