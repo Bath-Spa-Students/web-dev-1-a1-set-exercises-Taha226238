@@ -16,7 +16,7 @@ In a new index.html file display three images (that you would be legally allowed
 * Give each image an appropriate title attribute.
 * Use CSS filters to change the appearance of all three of your images.
 * Ensure each image is under 300kb.
-* Underneath each image, provide information on its copyright license. 
+* Underneath each image, provide information on its copyright license.  
 
 <hr>
 
