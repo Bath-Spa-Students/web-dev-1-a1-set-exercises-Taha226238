@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #000;
+    background-color: #fff;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #17072b;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+}
+
+header h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%; /* Extend the line across the width of the text */
+    height: 2px;
+    background-color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: normal; /* Changed from bold to normal */
+}
+
+main {
+    padding: 20px 0;
+}
+
+section#welcome {
+    padding-bottom: 10px; /* Add padding bottom to create space for the border */
+    border-bottom: 2px solid #fff; /* Add a white border line at the bottom */
+}
+
+section#welcome h2 {
+    display: inline-block;
+    position: relative;
+    font-weight: bold; /* Make the text bold */
+}
+
+section#welcome h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%; /* Extend the line across the width of the text */
+    height: 2px;
+    background-color: #000000;
+}
+
+aside {
+    background-color: #172d67;
+    color: #fff;
+    padding: 20px;
+    width: 40%; /* Adjusted width */
+    float: right;
+    margin-top: 20px; /* Adjusted margin */
+    margin-left: -100px; /* Added margin to create space between sections */
+}
+
+aside h2 {
+    display: inline-block;
+    position: relative;
+}
+
+aside h2::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%; /* Extend the line across the width of the text */
+    height: 2px;
+    background-color: #fff;
+}
+
+footer {
+    background-color: #8c15e9;
+    color: #fff;
+    text-align: center;
+    padding: 2px 0;
+}
+
+/* Set image size to be square */
+.images img {
+    width: 40%; /* Set the width */
+    height: auto; /* Set the height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+/* Add styles for left and right sections */
+.left {
+    float: left;
+    width: 55%; /* Adjust width as needed */
+}
+
+.right {
+    float: right;
+    width: 30%; /* Adjust width as needed */
+}
+
+/* Clear floats */
+.container::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.images .additional-image {
+    width: 100%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 20px; /* Add margin for separation */
+}
