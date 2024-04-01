@@ -1,0 +1,149 @@
+ /* Reset CSS */
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'georgia', serif;
+    color: #fff;
+    line-height: 1.6;
+    overflow-y: auto;
+    animation: changeBackground 10s infinite alternate; /* Apply animation */
+}
+
+@keyframes changeBackground {
+    0% { background: linear-gradient(120deg, #9fc3f7, #d982e6); }
+    50% { background: linear-gradient(120deg, #95b8ea, #f68bf6); }
+    100% { background: linear-gradient(120deg, #7bc7e7, #cc6ebb); }
+}
+
+header, nav {
+    background: linear-gradient(120deg, #f29684, #ee9d87); /* Initial background */
+    padding: 20px 0;
+    text-align: center;
+    animation: changeBackground 10s infinite alternate; /* Apply animation */
+}
+
+@keyframes changeBackground {
+    0% { background: linear-gradient(120deg, #7ebee9, #ea7cd0); } /* Start color */
+    50% { background: linear-gradient(120deg, #94bbe8, #bb64ba); } /* Middle color */
+    100% { background: linear-gradient(120deg, #65c0c9, #cf73b5); } /* End color */
+}
+
+header h1 {
+    font-weight: 700;
+    padding: 20px 0;
+    font-size: 80px;
+    font-family: 'Georgia, serif';
+    font-style: oblique;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #ffc107;
+}
+
+main {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: space-between; /* Distribute items evenly */
+}
+
+.column {
+    width: calc(50% - 40px); /* Adjusted width for two columns */
+    margin: 20px 20px 20px 0; /* Adjusted margin for spacing */
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(119, 108, 108, 0.1);
+    box-shadow: 0 4px 6px rgba(255, 96, 96, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 600px; /* Limit width for better readability */
+}
+
+.column:hover {
+    transform: translateY(-5px);
+}
+
+.column h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Garamond', serif;
+    font-style: oblique;
+}
+
+.column ul {
+    padding: 0;
+    text-align: left;
+}
+
+.column ul li {
+    margin-bottom: 10px;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1.2em;
+    line-height: 1.4;
+    list-style: none;
+}
+
+.column ul li::before {
+    content: '\2022';
+    color: #ffc107;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+}
+
+/* New section */
+.weather-box {
+    width: calc(50% - 40px); /* Adjusted width for one column */
+    margin: 20px 0 20px 20px; /* Adjusted margin for spacing */
+    padding: 20px;
+    border-radius: 8px;
+    background: rgba(119, 108, 108, 0.1);
+    box-shadow: 0 4px 6px rgba(255, 96, 96, 0.1);
+    max-width: 600px;
+}
+
+.weather-box h2 {
+    font-size: 2em;
+    margin-bottom: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: 'Garamond', serif;
+    font-style: oblique;
+}
+
+.weather {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.weather p {
+    font-size: 1.2em;
+    line-height: 1.4;
+}
