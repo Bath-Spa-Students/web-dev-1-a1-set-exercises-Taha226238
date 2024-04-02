@@ -2,45 +2,32 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    color: #000;
-    background-color: #fff;
-}
-
-.container {
-    width: 80%;
-    margin: 0 auto;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Set minimum height to the viewport height */
 }
 
 header {
     background-color: #17072b;
-    color: #fff;
-    padding: 20px 0;
-    text-align: center;
+    color: #ffffff;
+    padding: 20px;
+    text-align: center; /* Center text */
 }
 
 header h1 {
     font-family: Tahoma, sans-serif;
-    font-weight: 700;
-    margin: 0;
-    position: relative;
-    display: inline-block;
-}
-
-header h1::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%; /* Extend the line across the width of the text */
-    height: 2px;
-    background-color: #fff;
+    font-size: 36px; /* Increase font size */
+    margin-top: 10px; /* Add spacing between heading and nav */
+    margin-bottom: 20px; /* Add spacing between heading and nav */
+    font-weight: bold; /* Make the text bold */
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
     margin: 0;
+    padding: 0;
 }
 
 nav ul li {
@@ -53,96 +40,82 @@ nav ul li:last-child {
 }
 
 nav ul li a {
-    color: #fff;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: normal; /* Changed from bold to normal */
+    font-size: 25px; /* Increase font size */
 }
 
 main {
-    padding: 20px 0;
-}
-
-section#welcome {
-    padding-bottom: 10px; /* Add padding bottom to create space for the border */
-    border-bottom: 2px solid #fff; /* Add a white border line at the bottom */
-}
-
-section#welcome h2 {
-    display: inline-block;
-    position: relative;
-    font-weight: bold; /* Make the text bold */
-}
-
-section#welcome h2::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%; /* Extend the line across the width of the text */
-    height: 2px;
-    background-color: #000000;
-}
-
-aside {
-    background-color: #172d67;
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex: 1; /* Expand main to fill remaining space */
     padding: 20px;
-    width: 40%; /* Adjusted width */
-    float: right;
-    margin-top: 20px; /* Adjusted margin */
-    margin-left: -100px; /* Added margin to create space between sections */
 }
 
-aside h2 {
-    display: inline-block;
-    position: relative;
+#welcome {
+    flex: 1;
+    margin-right: 20px;
+    margin-left: 20px;
 }
 
-aside h2::after {
-    content: "";
-    display: block;
-    position: absolute;
-    bottom: -5px;
-    left: 0;
-    width: 100%; /* Extend the line across the width of the text */
-    height: 2px;
-    background-color: #fff;
+#welcome h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+    color: #17072b;
+    margin-bottom: 10px;
+}
+
+#lineup-container {
+    background-color: #172d67;
+    color: #ffffff;
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+#lineup-content {
+    margin-bottom: 20px;
+}
+
+#lineup-content h2 {
+    font-family: Tahoma, sans-serif;
+    font-weight: 700;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.image-container img {
+    width: 48%;
 }
 
 footer {
     background-color: #8c15e9;
-    color: #fff;
+    color: #ffffff;
+    padding: 0px;
     text-align: center;
-    padding: 2px 0;
 }
 
-/* Set image size to be square */
-.images img {
-    width: 40%; /* Set the width */
-    height: auto; /* Set the height */
-    object-fit: cover; /* Maintain aspect ratio */
-}
-/* Add styles for left and right sections */
-.left {
-    float: left;
-    width: 55%; /* Adjust width as needed */
+#lineup-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
-.right {
-    float: right;
-    width: 30%; /* Adjust width as needed */
+#lineup-content li {
+    margin-bottom: 28px; /* Adjust spacing as needed */
 }
 
-/* Clear floats */
-.container::after {
-    content: "";
-    display: table;
-    clear: both;
+header h1,  h2 {
+    border-bottom: 3px solid #ffffff;
+    display: inline-block;
 }
 
-.images .additional-image {
-    width: 100%; /* Adjust the width as needed */
-    height: auto; /* Maintain aspect ratio */
-    margin-top: 20px; /* Add margin for separation */
+#welcome h2 {
+    border-bottom: 3px solid #000000;
 }
