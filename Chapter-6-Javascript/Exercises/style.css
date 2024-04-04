@@ -1,0 +1,71 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url('45.jpg'); /* Add the URL of your background image */
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator-container {
+    text-align: center;
+    max-width: 600px; /* Adjusted max-width */
+    width: 100%;
+    padding: 20px;
+}
+.calculator {
+    background-color: rgba(0, 0, 0, 0.8); /* Added transparency to the calculator */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 0, 0, 0.529);
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+h1 {
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 50px;
+}
+label {
+    display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #9b9b9b;
+}
+input[type="number"] {
+    padding: 12px;
+    margin: 5px;
+    width: calc(100% - 20px);
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    transition: border-color 0.3s;
+    font-size: 16px;
+}
+input[type="number"]:focus {
+    border-color: #ff0000;
+    outline: none;
+}
+button {
+    padding: 12px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 18px;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #818484;
+}
+p {
+    margin-top: 20px;
+    font-size: 20px;
+    color: #555;
+}
